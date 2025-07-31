@@ -28,13 +28,13 @@ codes.forEach((code, index) => {
  */
 function validateKey () {
     const digits = [];
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= 17; i++) {
         const value = document.getElementById(`digit${ i }`).value;
         digits.push(value);
     }
 
     const studentResult = digits.join('');
-    const secretKey = '3611111211111632';
+    const secretKey = '36711111211111632';
 
     if (studentResult === secretKey) {
         showPopup("Success!", "✅ Master key correct! You have completed the Escape Room", true);
